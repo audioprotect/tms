@@ -1,24 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Page Not Found</title>
+  <title>404 - Page Not Found</title>
   <style>
     body {
+      margin: 0;
+      padding: 0;
       background-color: #0d1117;
-      color: white;
-      font-family: sans-serif;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      padding: 50px;
     }
-    a {
-      color: #58a6ff;
+
+    h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
+      color: #c9d1d9;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #238636;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    a.button:hover {
+      background-color: #2ea043;
     }
   </style>
 </head>
 <body>
-  <h1>404 - Page Not Found</h1>
-  <p>Sorry, the page you're looking for doesn't exist.</p>
-  <p><a href="/">Return to Home</a></p>
+  <h1>404</h1>
+  <p>Oops! The page you're looking for doesn't exist.</p>
+  <a href="/" class="button">Go Home</a>
 </body>
 </html>
